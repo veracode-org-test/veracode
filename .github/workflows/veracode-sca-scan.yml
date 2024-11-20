@@ -77,6 +77,8 @@ jobs:
           	echo "The package.json file does not exist."
           fi
           rm -rf veracode-helper
+          java -version
+          env
 
       - name: Run Veracode SCA
         env:
@@ -89,3 +91,4 @@ jobs:
           recursive: true
           allow-dirty: true
           debug: true
+      
